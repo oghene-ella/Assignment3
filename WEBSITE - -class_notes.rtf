@@ -1,0 +1,1817 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\colortbl ;\red0\green77\blue187;\red255\green0\blue0;\red155\green0\blue211;\red0\green0\blue255;\red0\green176\blue80;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs32\lang9  CLASS WORK 3\par
+\cf1\fs48 1. download the files from from git and extract to your pc\par
+2.correct thelinks in the about use page\par
+3.uploade the editd project to your github account using the method shown in class\par
+4 send the link to miss Lilian\par
+\cf0\fs32\par
+\cf2\fs56 COURSE REQUIREMENT\par
+             GITHUB ACCOUNT\par
+\cf0\fs32 how to upload your project on github\par
+1 login to your Github account\par
+2. Go to repositories\par
+3.Selet the new button at the extreme right\par
+Enter the repo name\par
+an \par
+Enter a brief description\par
+4.  Next click on create repository\par
+5.Select the "Upload an existing file" link\par
+6 Simply drag your files into the upload section\par
+7 Once all the files have been uploaded add a brief description\par
+8.Next select the commit files button\par
+9. Go to the Repo settings section  to the GitHub Pages section\par
+10. Change the source from none to main, and save\par
+11. once the page reloads , go to the GitHub Pages section\par
+again , and select the generated link\par
+\cf2\par
+TAGS AND HOW THEY ARE BEING USED\par
+\cf0\par
+\par
+HTML TABLES\b0\fs22\par
+\cf1\b\fs32 START WITH  TABLE TAG <TABLE>\par
+NEXT TR TAG (TABLE ROW)  <TR>\par
+NEXT TD TAG (TABLE DATA) <TD>\par
+
+\pard\li2160\sa200\sl276\slmult1\cf3 all tags in a table have a closing tag\par
+the tr forms the table row\par
+the td forms the table column\par
+
+\pard\sa200\sl276\slmult1\cf2 content alignment\cf0\par
+for <tr > we have the following :\par
+
+\pard\li1440\sa200\sl276\slmult1\cf3 valign=bottom\par
+valign=middle\par
+valign=top\par
+
+\pard\sa200\sl276\slmult1\cf0 for <td > we have the following :\par
+
+\pard\li1440\sa200\sl276\slmult1\cf3 align=left\par
+align=right\par
+align=center\par
+\par
+
+\pard\sa200\sl276\slmult1\cf0  HTML images\par
+images are inserted using the image tag\par
+\cf3\fs56 <img/>\cf0\fs32\par
+some image tag attributes are \par
+src,\par
+width,\par
+height,\par
+border,\par
+alt\par
+illustration\par
+to insert an image you use the coe below\par
+<img src="" width="" height="" alt="">\par
+\fs56 html entities\fs32\par
+SPACE  &nbsp;\par
+\par
+\par
+SOME HTML ATTRIBUTES\b0\fs22\par
+\par
+\par
+\b\fs48 HTML dir Attribute\b0\fs22\par
+
+\pard\li2160\sa200\sl276\slmult1\b <p dir="rtl">Write this text right-to-left!</p>\par
+<p dir="ltr">Write this text right-to-left!</p>\par
+
+\pard\sa200\sl276\slmult1\b0\par
+HTML title Attribute\par
+<p><abbr title="hiiT Plc International Training Institute">\par
+HIIT PLC\par
+</abbr> was founded in 1948.</p>\par
+<p title=" Free Training Scholarships  ">\par
+{{\field{\*\fldinst{HYPERLINK www.hiitplc.com }}{\fldrslt{www.hiitplc.com\ul0\cf0}}}}\f0\fs22\par
+\par
+</p>\par
+\par
+\cf5\b\i\par
+\cf1\fs44 HTML <section> Tag\cf5\fs22\par
+\cf0\b0\i0\par
+\par
+\i\fs36\par
+HTML <picture> Tag\par
+
+\pard\li720\sa200\sl276\slmult1\cf3\b\fs56 <picture>\par
+\i0\fs40   <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">\par
+  <source media="(min-width:465px)" srcset="img_white_flower.jpg">\par
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">\par
+</picture>\par
+
+\pard\sa200\sl276\slmult1\cf0\b0\fs22 you get different ppictures based on the browser width\par
+The most common use of the <picture> element will be for art direction in responsive designs. Instead of having one image that is scaled up or down based on the viewport width, multiple images can be designed to more nicely fill the browser viewport.\par
+\par
+
+\pard\li720\sa200\sl276\slmult1\cf3\b The <picture> element contains two tags: one or more <source> tags and one <img> tag.\par
+The browser will look for the first <source> element where the media query matches the current viewport width, and then it will display the proper image (specified in the srcset attribute). The <img> element is required as the last child of the <picture> element, as a fallback option if none of the source tags matches.\par
+Tip: The <picture> element works "similar" to <video> and <audio>. You set up different sources, and the first source that fits the preferences is the one being used\cf0\b0 .\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\fs32 The min-width property defines the minimum width of an element.\par
+\par
+If the content is smaller than the minimum width, the minimum width will be applied.\par
+\par
+If the content is larger than the minimum width, the min-width property has no effect.\par
+\par
+Note: This prevents the value of the width property from becoming smaller than min-width\fs22 .\par
+\par
+\par
+\par
+\par
+\b\fs44 HTML <output> Tag\b0\fs22\par
+The <output> tag is used to represent the result of a calculation (like one performed by a script).\par
+<form \par
+\b\fs32 oninput="x.value=parseInt(a.value)+parseInt(b.value)"    \b0\fs22\par
+  >\par
+<input type="range" id="a" value="50">\par
++<input type="number" id="b" value="25">\par
+=<output name="x" for="a b"></output>\par
+</form>\par
+\par
+\b\fs32 HTML <option> Tag\b0\fs22\par
+<label for="cars">Choose a course:</label>\par
+\par
+<select id="courses">\par
+  <option value="WebDesign"> Web Design </option>\par
+  <option value="PythonProgramming">Python Programming</option>\par
+  <option value="GraphicsDesign"> Graphics Design</option>\par
+  <option value="VideoEditing">  Video Editing</option>\par
+</select>\par
+\par
+\par
+\par
+\fs32 HTML <datalist> Tag\fs22\par
+<h1>The datalist element</h1>\par
+\par
+<form action="/action_page.php" method="get">\par
+  <label for="browser">Choose your browser from the list:</label>\par
+  <input list="browsers" name="browser" id="browser">\par
+  <datalist id="browsers">\par
+    <option value="Edge">\par
+    <option value="Firefox">\par
+    <option value="Chrome">\par
+    <option value="Opera">\par
+    <option value="Safari">\par
+  </datalist>\par
+  <input type="submit">\par
+</form>\par
+\par
+\par
+\par
+\b\fs48 HTML <legend> Tag\b0\fs22\par
+The <legend> tag defines a caption for the <fieldset> element.\par
+\par
+<h1>  Your Details  </h1>\par
+<form action="/action_page.php">\par
+ <fieldset>\par
+  <legend>Personalia:</legend>\par
+  <label for="fname">First name:</label>\par
+  <input type="text" id="fname" name="fname"><br><br>\par
+  <label for="lname">Last name:</label>\par
+  <input type="text" id="lname" name="lname"><br><br>\par
+  <label for="email">Email:</label>\par
+  <input type="email" id="email" name="email"><br><br>\par
+  <label for="birthday">Birthday:</label>\par
+  <input type="date" id="birthday" name="birthday"><br><br>\par
+  <input type="submit" value="Submit">\par
+ </fieldset>\par
+</form>\par
+\par
+\par
+\par
+\par
+\par
+\fs36 HTML <label> Tag\fs22\par
+The <label> tag defines a label for several elements\par
+<form action="/action_page.php">\par
+  <label for="male">Male</label>\par
+  <input type="radio" name="gender" id="male" value="male"><br>\par
+  <label for="female">Female</label>\par
+  <input type="radio" name="gender" id="female" value="female"><br>\par
+  <label for="other">Other</label>\par
+  <input type="radio" name="gender" id="other" value="other"><br><br>\par
+  <input type="submit" value="Submit">\par
+</form>\par
+\par
+\cf1\b\i HTML <input> Tag\cf0\b0\i0\par
+\par
+\par
+\par
+\fs40 HTML <iframe> Tag\fs22\par
+The <iframe> tag specifies an inline frame.\par
+An inline frame is used to embed another document within the current HTML document.\par
+
+\pard\li720\sa200\sl276\slmult1\par
+<p>An iframe with default borders:</p>\par
+<iframe src="/default.asp" width="100%" height="300">\par
+</iframe>\par
+\par
+<p>An iframe with a thin black border:</p>\par
+<iframe src="/default.asp" width="100%" height="300" style="border:1px solid black;">\par
+</iframe>\par
+\par
+<p>An iframe with no borders:</p>\par
+<iframe src="/default.asp" width="100%" height="300" style="border:none;">\par
+</iframe>\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Default CSS Settings\ulnone\b0\par
+Most browsers will display the <iframe> element with the following default values:\par
+\par
+iframe:focus \{\par
+  outline: none;\par
+\}\par
+\par
+iframe[seamless] \{\par
+  display: block;\par
+\}\par
+\par
+\ul\b\fs32 Iframe - Target for a Link\ulnone\b0\fs22\par
+An iframe can be used as the target frame for a link.\par
+\par
+The target attribute of the link must refer to the name attribute of the iframe:\par
+<iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>\par
+\par
+<p><a href="hiitplc.com" target="iframe_a">\par
+HiiT Plc\par
+</a></p>\par
+\par
+\b\fs40  HTML <iframe> scrolling \b0\fs22\par
+Attribute is used to specify that whether the scrollbar will be displayed or not in the <Iframe> Element. Basically the scrollbar is used when the content is large than the Iframe Element.\par
+<iframe scrolling="auto | yes | no">\par
+frameborder ="1|0"\par
+\par
+\par
+\par
+\b\fs36 HTML <footer> Tag\b0\fs22\par
+\par
+\par
+The <footer> tag defines a footer for a document or section.\par
+\par
+A <footer> element typically contains:\par
+\par
+authorship information\par
+copyright information\par
+contact information\par
+sitemap\par
+back to top links\par
+related documents\par
+You can have several <footer> elements in one document.\par
+<!DOCTYPE html>\par
+<html>\par
+<head>\par
+<style>\par
+.all-browsers \{\par
+  margin: 0;\par
+  padding: 5px;\par
+  background-color: lightgray;\par
+\}\par
+\par
+.all-browsers > h1, .browser \{\par
+  margin: 10px;\par
+  padding: 5px;\par
+\}\par
+\par
+.browser \{\par
+  background: white;\par
+\}\par
+\par
+.browser > h2, p \{\par
+  margin: 4px;\par
+  font-size: 90%;\par
+\}\par
+\par
+footer \{\par
+  text-align: center;\par
+  padding: 3px;\par
+  background-color: DarkSalmon;\par
+  color: white;\par
+\}\par
+</style>\par
+</head>\par
+<body>\par
+\par
+<h1>The article and footer elements + CSS</h1>\par
+\par
+<article class="all-fashion">\par
+  <h1>Most PopularTrends</h1>\par
+  <article class="browser">\par
+    <h2>  Elegant Fashion</h2>\par
+    <p>\par
+<p>\par
+  </article>\par
+  <article class="fashion">\par
+    <h2> Designs and Colors</h2>\par
+    <p>\par
+\par
+Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018\par
+\par
+.</p>\par
+  </article>\par
+  <article class="browser">\par
+    <h2> Fashion  Edge</h2>\par
+    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.\par
+\par
+</p>\par
+  </article>\par
+</article>\par
+\par
+<footer>\par
+  <p>Author: Amodeni Oluwaseun<br>\par
+  <a href="{{\field{\*\fldinst{HYPERLINK mailto:seunamodeni@example.com }}{\fldrslt{mailto:seunamodeni@example.com\ul0\cf0}}}}\f0\fs22 ">seaunamodeni@example.com</a></p>\par
+</footer>\par
+\par
+</body>\par
+</html>\par
+\par
+\par
+\par
+\cf2\b\fs28 To be discussed Next Class\cf0\b0\fs22\par
+\cf1\b HTML <input> Tag\cf0\b0\par
+\cf1\b HTML Audio and Video\par
+HTML Audio/Video Events\cf0\b0\par
+\cf1\b Window Event Attributes\cf0\b0\par
+\par
+\par
+\par
+\ul\b\fs36 SOME FONT FACES YOU CAN USE \ulnone\b0\fs22\par
+\par
+\par
+All fonts on our list are web-safe, so you don\rquote t have to worry about compatibility or performance issues. Now, let\rquote s check out the 20 best HTML web fonts:\par
+\par
+1. Arial\par
+Arial HTML font\par
+\par
+Arial is one of the most famous fonts for both online and printed media. What\rquote s more, it is the default font in Google Docs, a popular online office suite. Many critics say that this sans-serif member is a safe bet for anyone.\par
+\par
+2. Times New Roman\par
+Times New Roman HTML font\par
+\par
+Times New Roman is a variation of the old Times font from the Serif group. With its professional look, it has become the favorite choice for printed media and more formal content. In addition, this typeface is favored by news websites and similar institutions.\par
+\par
+3. Helvetica\par
+Helvetica HTML font\par
+\par
+Designers love Helvetica because it\rquote s neutral and suitable for any type of business. That\rquote s why many renowned brands, such as Jeep, Kawasaki, Motorola, and BMW, picked this font up. We\rquote re sure people can\rquote t go wrong when choosing Helvetica, regardless of the purposes.\par
+\par
+4. Times\par
+Times HTML font\par
+\par
+Originally, Times was used when printing most newspapers, and it has been associated with journalism and academic writing ever since. Therefore, if you want to add a traditional or formal feeling to your website, this font is a perfect choice.\par
+\par
+5. Courier New\par
+Courier New HTML font\par
+\par
+This font is an alternative to Courier, that is thinner and more visually appealing on screen. For that reason, electronic devices primarily feature Courier New. But since it\rquote s also a typewriter font, it should look great on websites that need an old-school design.\par
+\par
+6. Verdana\par
+Verdana HTML font\par
+\par
+This typeface is easily readable even when using small font sizes, or when displayed on low-resolution screens. This makes Verdana an excellent screen font. However, a big company like IKEA uses Verdana not only for its site but also their printed catalogs. If you\rquote re looking for an HTML font with great readability, you should try this typeface.\par
+\par
+7. Courier\par
+Courier typeface\par
+\par
+You can say that Courier is the most famous font in the monospace family \f1\endash  all operating systems come prepackaged with it. This HTML font has been a standard for movie screenplays, as well. Therefore, if your website is all about that subject, definitely consider adding Courier to your site.\par
+\par
+8. Arial Narrow\par
+Arial Narrow typeface\par
+\par
+It is one of Arial\rquote s versions that offers a sleeker design than the original. Users can still find this alternative font preinstalled in a variety of OS. Much like its predecessor, Arial Narrow is versatile and fits any type of webpage.\par
+\par
+9. Candara\par
+Candara typeface\par
+\par
+Microsoft Vista is the first OS that brought Candara to the mainstream. It supports the Windows ClearType text rendering system, which should improve text readability on LCD displays.\par
+\par
+10. Geneva\par
+Geneva typeface\par
+\par
+Geneva belongs to the Sans-serif group and was originally developed by Apple. Similar to any typeface in this font family, Geneva offers a clear and modern look for your website or blog.\par
+\par
+11. Calibri\par
+Calibri typeface\par
+\par
+It is the default font for Microsoft Office. With Microsoft Windows still being on top of the desktop OS market share trends, people should have no problem reading this HTML font on their browsers.\par
+\par
+12. Optima\par
+Optima typeface\par
+\par
+Optima finds its inspiration from classical Roman Capital letters. It is used in many different places \endash  from road signs to beauty product logos. This HTML font is elegant and highly visible, which is necessary for making your content pop.\par
+\par
+13. Cambria\par
+Cambria font design\par
+\par
+Calibri, Candara and Cambria all belong to the ClearType font style that Microsoft makes. With very even proportions, Cambria was designed for a great on-screen reading experience, even when it\rquote s displayed in small sizes.\par
+\par
+14. Garamond\par
+Garamond font design\par
+\par
+Garamond is a classical font type for many printed books. Print designers consider it as one of the best options, thanks to its timeless look and good readability. We\rquote re convinced Garamond is suitable for adding an antique nuance to a website or blog.\par
+\par
+15. Perpetua\par
+Perpetua font design\par
+\par
+The font came from the idea of an English sculptor who was influenced by monuments and memorial lettering. The formal characteristics encouraged Penguin Classics and the University of Pennsylvania to feature Perpetua in their publications. All in all, an educational or informational page can definitely benefit from this HTML font.\par
+\par
+16. Monaco\par
+Monaco font design\par
+\par
+MacOS X ships with Monaco, a monospace family member, for the Terminal and Xcode. It features a distinctive design, which helps us tell similar-looking letters apart. Try Monaco on your website if you often write code and don\rquote t want readers to be confused by even a single letter.\par
+\par
+17. Didot\par
+Didot font design\par
+\par
+Didot is a serif font that has been described as neoclassical by many critics \endash  that means it carries a classic design but adds a modern twist to it. It\rquote s used by CBS News and The Late Show with Stephen Colbert. This typeface is known for its high contrast and increased stress, helping it stand out.\par
+\par
+18. Brush Script MT\par
+Brush Script MT font design\par
+\par
+This font features a calligraphy style based on handwriting techniques. This way, Brush Script MT translates into a beautiful yet readable HTML font for your site. Though Brush Script MT is elegant and sophisticated, it might be best suited for editor\rquote s notes and similar uses.\par
+\par
+19. Lucida Bright\par
+Lucida Bright font\par
+\par
+Lucida Bright is one of the Lucida font versions with more contrast. The narrow typeface allows for the effective use of space and can be great for manuals or magazines. A famous user of this typeface is Scientific American Magazine.\par
+\par
+20. Copperplate\par
+Copperplate font\par
+\par
+Copperplate\rquote s designers wanted the font to be used only for headers or titles, so it only includes capital letters. The typeface became famous after \ldblquote Who Wants To Be A Millionaire\rdblquote  made the font its trademark.\par
+\par
+Mention (Comic Sans)\par
+Don't use comic sans\par
+\par
+\par
+\f0\lang1033 REFERENCE URLS\par
+{{\field{\*\fldinst{HYPERLINK https://www.fonts.com/ }}{\fldrslt{https://www.fonts.com/\ul0\cf0}}}}\f1\fs22\lang9\par
+{\f0{\field{\*\fldinst{HYPERLINK https://fonts.google.com/ }}{\fldrslt{https://fonts.google.com/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://www.typotheque.com/fonts/lava/devanagari }}{\fldrslt{https://www.typotheque.com/fonts/lava/devanagari\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://www.typography.com/ }}{\fldrslt{https://www.typography.com/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://www.youtube.com/watch?v=zyor3kqyHJI }}{\fldrslt{https://www.youtube.com/watch?v=zyor3kqyHJI\ul0\cf0}}}}\f0\fs22\par
+\par
+CSS | @font-face rule\par
+Last Updated : 22 Aug, 2019\par
+In the CSS @font-face rule is used to associate a font name that can be used in a style sheet. A font-family descriptor is used within the rule to name the font and an src descriptor is associated with an external font name. This can be used with downloadable fonts. This CSS @font-face rule can contain more than one properties (max 24).\par
+\par
+Syntax:\par
+\par
+@font-face \{ font-family: fontname; src: url(fontfile path); \par
+font-stretch: font-stretch Property; font-weight: font-weight Property;\par
+font-style: font-style Property; \} \par
+Parameter: The @font-face rule accepts four parameter as mentioned above and described below:\par
+\par
+font-family: It is used to hold the fonat-family.\par
+src: It is used to hold the src file path(url)\par
+font-stretch: It is used to set the text wider or narrower.\par
+font-weight: It is used to hold the font-weight.\par
+font-style: It is used to hold the font-weight.\par
+1\par
+\b\fs40 WEBSITE HEADER\b0\fs22\par
+\par
+\par
+When your viewers click onto your webpage, you have approximately 6 seconds to let them know who you are.\par
+\par
+Your header is there to share your professional identity and allow viewers the opportunity to see what you promote, the services you offer or the products you sell.\par
+Website headers share your brand in a precise yet effective manner.\par
+The very best header designs will also be unique.\par
+Your website header design will also assist your viewer to confidently navigate your site.  Web headers that are well placed and carefully planned will help to increase your conversion rate.\par
+\par
+\b\fs24 What does a website header contain?\b0\fs22\par
+Website heading designs share a wide variety of information with viewers.  This information includes:\par
+\par
+\ul\b Brand identity: \ulnone\b0\par
+your company logo, colors, font, slogan or imagery.  This will help your viewers know they have come to the right place.\par
+\ul\b Contact information: \ulnone\b0\par
+your email, address or telephone number, so that your viewers can make further contact with you.\par
+\ul\b Contact links: \ulnone\b0\par
+can be divided into different sections or page headers for simplicity.\ul\b\par
+Language options:\par
+\ulnone\b0  in case you are appealing to an international market.\par
+\ul\b Links to social media accounts: \ulnone\b0\par
+gives viewers the option to make direct contact with you and to learn the latest information.\par
+\ul\b Subscription field: \ulnone\b0\par
+Your viewers can share their contact information and become part of a mailing list.  This helps them stay updated with your latest products or services.\par
+\ul\b Search button:\ulnone\b0\par
+ Helps viewers to access relevant information.\par
+\ul\b Links to free trials or sample products:\ulnone\b0\par
+ Your viewers can gain coupons for first purchases, use a product free for a limited time or download a free sample e-book from your site.\par
+Although there is a variety of different header ideas which can be used to share information with viewers, your goal is to keep your website header designs simple and uncluttered.\par
+\par
+\par
+\b\fs28 What message should your header transmit?\b0\fs22\par
+When designing a webpage header, think not only of the verbal, but also of the emotional message you will transmit.  Your web header design will hopefully inspire your reader into:\par
+\par
+\ul Taking action: \ulnone\par
+you can use your web page header to inspire your readers to take action.  By placing a call to action button (CTA) in your website heading, you\rquote ll be converting your viewers into subscribers from the very start.\par
+\ul Trust building: \ulnone\par
+if subscribing to your site instantly would mean giving away personal information, it is often better to build trust first.  Your page header design could inspire trust by inspiring confidence or sharing your company values.  Viewers may be willing to subscribe later on because they believe in your company and your product.\par
+\ul Evoke curiosity:\ulnone\par
+ for some websites, good headers would evoke curiosity in their readers.  This would encourage a reader to engage, delving more deeply into your site.\par
+\ul Draw on pain points: \ulnone\par
+you might wonder why you would want to remind your viewers of painful feelings or situations in your headings design.  Marketers explain that viewers are often searching for solutions to their current pain points.  By showing viewers how you can solve their problems, you are often able to increase your conversion rate.\par
+\ul Laughter:\ulnone\par
+ funny headers help you to build a relationship with your viewer very quickly.  By using humour to make your clients laugh, you will be able to create a sense of comfort and rapport.\par
+\ul Familiarity: \ulnone\par
+viewers are comfortable with that which feels familiar to them.  By using scenes, colours or even people your viewers feel familiar with in your website headings design, you will build a bond.  Your viewer will then explore more of your site.\par
+\par
+\ul\fs32 Best practices for website header designing\ulnone\fs22\par
+
+\pard\li720\sa200\sl276\slmult1\b Emotionally evocative imagery\par
+Slider images\par
+
+\pard\sa200\sl276\slmult1\b0 If you have some great images to share, and you know they\rquote ll keep your viewer\rquote s engaged, how about making use of a slider?  Sliders will help you to create a beautiful website without the clutter.\par
+\par
+
+\pard\li720\sa200\sl276\slmult1\b Video backgrounds\b0\par
+
+\pard\sa200\sl276\slmult1 Video backgrounds are new website header ideas which work very effectively.  Keep your viewer entertained while sharing an important message.\par
+\par
+
+\pard\li720\sa200\sl276\slmult1\b Eye-catching typography\par
+Product first website heading\par
+Create a content first site\par
+Product first website heading\par
+Create a Call to Action\par
+Use animations\par
+
+\pard\li1440\sa200\sl276\slmult1 However, animated images can make cool website headers for a vibrant or interactive site.  If you\rquote re looking for an interactive webpage which engages viewers, animation will make an excellent option.\par
+
+\pard\li720\sa200\sl276\slmult1 Website header size\par
+
+\pard\li1440\sa200\sl276\slmult1 Your header picture doesn\rquote t need to be prominent and a small, short header will serve for content-heavy sites.\par
+\par
+
+\pard\li720\sa200\sl276\slmult1 The website header\rquote s subject\par
+
+\pard\li1440\sa200\sl276\slmult1 The header is the place where your website guests will want to quickly discover the purpose of your site. An awesome website will share what you have on offer at first glance.For instance, if you are offering a particular service, clients are going to require seeing evidence of your previous work.\par
+\par
+An image carousel is a great option if you want to provide many images into your site header.If your bite has multiple features, or you want to show your portfolio, this can be a great opportunity to make the most of your web page header.\par
+
+\pard\li720\sa200\sl276\slmult1 Make the header design simple\par
+
+\pard\li1440\sa200\sl276\slmult1 By keeping it clean and uncluttered, you can be sure you not to ask much from your guests. Many of the most creative web site headers have a clean and simple appearance.\par
+
+\pard\li720\sa200\sl276\slmult1 Deliver a message with your header design\par
+
+\pard\li1440\sa200\sl276\slmult1 our site header can likewise carry an information and introduction to your business.\par
+This visual detail is an excellent way to deliver a message. For people, who require knowing more, there is a small text, describing their marketing idea.\b0\par
+
+\pard\li720\sa200\sl276\slmult1\par
+\par
+\par
+\b\fs32 WEB SITE FOOTER\b0\fs22\par
+\par
+{{\field{\*\fldinst{HYPERLINK https://www.web-eau.net/blog/10-best-footer-html-css-snippets }}{\fldrslt{https://www.web-eau.net/blog/10-best-footer-html-css-snippets\ul0\cf0}}}}\f0\fs22\par
+\par
+Why do footers matter for your website?\par
+\b 1. They emphasize your content\b0\par
+\par
+\par
+Making your footer visible will attract a larger number of visitors to them. You can hardly imagine how long readers can scroll down your page \f1\endash  close to infinity! Remember: you footer is never too far, so it will apparently find its audience. \par
+\par
+\b 2. They help you win leads\b0\par
+\par
+\par
+Let your visitors know that the bottom of a page is not the end of a website. It may be a time to leave your website but not your company. Pick what fits you better: either contact form, email, or address in the footer will help your users take the next step.\par
+\par
+\b 3. They provide your users with useful info\b0\par
+\par
+\par
+Got more information than can be adequately put into a single page? Place it in your footer! It concerns any links to external resources, your partners, sponsors. Putting some legal info into your website may also be reasonable, but terms of service or legal notice are always better off somewhere underneath.\par
+\b\par
+4. They guide your readers\par
+\b0\par
+\par
+If your website visitors find themselves too far from the header \endash  it is an unmistakable sign that they are still in search of something they came for. Navigate them through your footer to the main sections of your website.\par
+\par
+\b 5. They hold visitors\rquote  attention\b0\par
+\par
+\par
+If basic information on your website supposes meager information, you can catch the attention by final accord making your website footer design creative or even entertaining.\par
+\par
+\par
+\par
+\b\fs28 HTML <embed> Tag\b0\fs22\par
+\f0\lang1033\par
+The <embed> tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application.\par
+\par
+\cf2\b\fs28 ****NOTES\par
+To display a picture, it is better to use the <img> tag.\par
+To display HTML, it is better to use the <iframe> tag.\par
+To display video or audio, it is better to use the <video> and <audio> tags.\par
+\cf0\b0\fs22\par
+An embedded video:\par
+<embed type="video/webm" src="video.mp4" width="400" height="300">\par
+\ul height\tab\ulnone\par
+\b VALUE : \b0 pixels\tab\par
+Specifies the height of the embedded content\par
+\ul src\tab\ulnone\par
+\b VALUE :  \b0 URL\tab\par
+Specifies the address of the external file to embed\par
+\par
+\par
+\par
+\ul type\tab\ulnone\par
+\b VALUE : \b0 media_type\tab\par
+Specifies the media type of the embedded content\par
+<embed type="media_type">\par
+\b A picture with a specified media type:\par
+<embed type="image/jpg" src="pic_trulli.jpg">\par
+{{\field{\*\fldinst{HYPERLINK http://www.iana.org/assignments/media-types/media-types.xhtml }}{\fldrslt{http://www.iana.org/assignments/media-types/media-types.xhtml\ul0\cf0}}}}\b0\f0\fs22\par
+\par
+An embedded HTML page:\par
+<embed type="text/html" src="about.html" width="500" height="200">\par
+\par
+\par
+An embedded video:\par
+<embed type="video/webm" src="video.mp4" width="400" height="300">\par
+\par
+\par
+\ul width\tab\ulnone\par
+\b VALUE : \b0 pixels\par
+Specifies the width of the embedded content\par
+\par
+\par
+\par
+\par
+\lang9\par
+\b\fs36 Buttons\b0\fs22\par
+The <button> tag defines a clickable button.\par
+\par
+Inside a <button> element you can put text (and tags like <i>, <b>, <strong>, <br>, <img>, etc.). That is not possible with a button created with the <input> element\par
+The type attribute specifies the type of button.\par
+\ul button\ulnone\tab\par
+The button is a clickable button\par
+\ul submit\ulnone\tab\par
+The button is a submit button (submits form-data)\par
+\ul reset\tab\par
+\ulnone The button is a reset button (resets the form-data to its initial values)\par
+\par
+illustration\par
+<form action="/action_page.php" method="get">\par
+  <label for="fname">First name:</label>\par
+  <input type="text" id="fname" name="fname"><br><br>\par
+  <label for="lname">Last name:</label>\par
+  <input type="text" id="lname" name="lname"><br><br>\par
+  <button type="submit" value="Submit">Submit</button>\par
+  <button type="reset" value="Reset">Reset</button>\par
+</form>\par
+\par
+\par
+\b BUTTON ATTRIBUTES \b0\par
+\ul autofocus\ulnone\tab\par
+VALUE : autofocus\tab\par
+Specifies that a button should automatically get focus when the page loads\par
+<button type="button" autofocus>Click Me!</button>\par
+\par
+\par
+\ul disabled\ulnone\tab\par
+VALUE : disabled\tab\par
+Specifies that a button should be disabled\par
+<button type="button" disabled>Click Me!</button>\par
+\par
+\par
+\par
+\par
+\ul form\tab\ulnone\par
+VALUE : form_id\tab\par
+Specifies which form the button belongs to\par
+\par
+\cf2\b\i\fs24 A button located outside a form (but still a part of the form):\cf0\b0\i0\fs22\par
+\par
+<form action="/action_page.php" method="get" id="form1">\par
+<label for="fname">First name:</label>\par
+<input type="text" id="fname" name="fname"><br><br>\par
+<label for="lname">Last name:</label>\par
+<input type="text" id="lname" name="lname">\par
+</form>\par
+\par
+<button type="submit" form="form1" value="Submit">Submit</button>\par
+\par
+\par
+\par
+\ul formaction\ulnone\tab\par
+VALUE : URL\tab\par
+Specifies where to send the form-data when a form is submitted. Only for type="submit"\par
+\par
+\par
+\par
+formenctype\tab\par
+VALUE : application/x-www-form-urlencoded\par
+VALUE :  multipart/form-data\par
+VALUE : text/plain\tab\par
+Specifies how form-data should be encoded before sending it to a server. \par
+\cf2\b\i\fs24 Only for type="submit"\cf0\b0\i0\fs22\par
+\par
+\par
+formmethod\tab\par
+VALUE : get\par
+VALUE : post\tab\par
+Specifies how to send the form-data (which HTTP method to use). Only for \cf2\b\i type="submit"\cf0\b0\i0\par
+\par
+formnovalidate\tab\par
+VALUE : formnovalidate\tab\par
+Specifies that the form-data should not be validated on submission.\par
+ \cf2\b Only for type="submit"\cf0\b0\par
+\par
+\par
+formtarget\tab\par
+VALUE : _blank\par
+VALUE : _self\par
+VALUE : _parent\par
+VALUE :  _top\par
+VALUE :  framename\tab\par
+Specifies where to display the response after submitting the form. \par
+\par
+\cf2\b\i Only for type="submit"\cf0\b0\i0\par
+\par
+name\tab\par
+VALUE : name\tab\par
+Specifies a name for the button\par
+\par
+\par
+type\tab\par
+VALUE :  button\par
+VALUE :  reset\par
+VALUE :  submit\tab Specifies the type of button\par
+value\tab\par
+VALUE : text\tab\par
+Specifies an initial value for the button\par
+\par
+Two buttons with equal names, that submit different values when clicked:\par
+<form action="/action_page.php" method="get">\par
+  Choose your favorite subject:\par
+  <button name="subject" type="submit" value="fav_HTML">HTML</button>\par
+  <button name="subject" type="submit" value="fav_CSS">CSS</button>\par
+</form>\par
+\par
+The value attribute specifies the initial value for a <button> in an HTML form.Note: In a form, the button and its value is only submitted if the button itself was used to submit the form.\par
+\par
+Note: If you use the <button> element in an HTML form, Internet Explorer, prior version 8, will submit the text between the <button> and </button> tags, while the other browsers will submit the content of the value attribute.\par
+\par
+\fs36\par
+How to create an HTML button that acts like a link?\par
+\fs22 set the action to the url of the page\par
+set the method to get\par
+\lang1033\par
+\par
+\par
+\b HTML EVENTS\par
+Window Event Attributes\par
+\b0\par
+IFRAMES \par
+\par
+HTML Audio/Video Methods\par
+HTML Audio/Video Properties\par
+HTML Audio/Video Events\par
+\par
+\par
+=============================================================================\f1\lang9\par
+\b\f0\fs28\lang1033 INTRODUCTION TO CSS\b0\f1\fs22\lang9\par
+\b\f0\fs28\lang1033 WHAT IS CSS\par
+HOW TO USE CSS IN A WEB PAGE\par
+\b0\f1\fs22\lang9\par
+\b\f0\fs36\lang1033 BASIC CSS \b0\f1\fs22\lang9\par
+\par
+\b\fs36 CSS Links\b0\fs22\par
+The four links states are:\par
+\par
+
+\pard\li1440\sa200\sl276\slmult1\fs36 a:link - a normal, unvisited link\par
+a:visited - a link the user has visited\par
+a:hover - a link when the user mouses over it\par
+a:active - a link the moment it is clicked\par
+
+\pard\li720\sa200\sl276\slmult1\fs22\par
+Example\par
+/* unvisited link */\par
+a:link \{\par
+  color: red;\par
+\}\par
+\par
+/* visited link */\par
+a:visited \{\par
+  color: green;\par
+\}\par
+\par
+/* mouse over link */\par
+a:hover \{\par
+  color: hotpink;\par
+\}\par
+\par
+/* selected link */\par
+a:active \{\par
+  color: blue;\par
+\}\par
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>\par
+\par
+\par
+\cf2\b\fs28 When setting the style for several link states, there are some order rules:\par
+\par
+a:hover MUST come after a:link and a:visited\par
+a:active MUST come after a:hover\par
+\cf0\b0\fs22\par
+Background Color\par
+Text Decoration\par
+\par
+\par
+\par
+\par
+\cf3\fs36 Link\f0\lang1033 s AND \f1\lang9  Buttons\cf0\fs22\par
+\b\i\fs28 a more advanced example where we combine several CSS properties to display links as boxes/buttons\b0\i0\fs22 :\par
+\par
+<!DOCTYPE html>\par
+<html>\par
+<head>\par
+<style>\par
+a:link, a:visited \{\par
+  background-color: #f44336;\par
+  color: white;\par
+  padding: 14px 25px;\par
+  text-align: center;\par
+  text-decoration: none;\par
+  display: inline-block;\par
+\}\par
+\par
+a:hover, a:active \{\par
+  background-color: red;\par
+\}\par
+</style>\par
+</head>\par
+<body>\par
+\par
+<h2>Link Button</h2>\par
+<p>A link styled as a button:</p>\par
+<a href="default.asp" target="_blank">This is a link</a>\par
+\par
+</body>\par
+</html>\par
+\par
+\b\fs28\par
+This example demonstrates the different types of cursors (can be useful for links):\par
+\b0\fs22\par
+<span style="cursor: auto">auto</span><br>\par
+<span style="cursor: crosshair">crosshair</span><br>\par
+<span style="cursor: default">default</span><br>\par
+<span style="cursor: e-resize">e-resize</span><br>\par
+<span style="cursor: help">help</span><br>\par
+<span style="cursor: move">move</span><br>\par
+<span style="cursor: n-resize">n-resize</span><br>\par
+<span style="cursor: ne-resize">ne-resize</span><br>\par
+<span style="cursor: nw-resize">nw-resize</span><br>\par
+<span style="cursor: pointer">pointer</span><br>\par
+<span style="cursor: progress">progress</span><br>\par
+<span style="cursor: s-resize">s-resize</span><br>\par
+<span style="cursor: se-resize">se-resize</span><br>\par
+<span style="cursor: sw-resize">sw-resize</span><br>\par
+<span style="cursor: text">text</span><br>\par
+<span style="cursor: w-resize">w-resize</span><br>\par
+<span style="cursor: wait">wait</span>\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\b\fs40 CSS Layout - width and max-width\b0\fs22\par
+\par
+\par
+a block-level element always takes up the full width available (stretches out to the left and right as far as it can).\par
+\par
+Setting the width of a block-level element will prevent it from stretching out to the edges of its container. Then, you can set the margins to auto, to horizontally center the element within its container. The element will take up the specified width, and the remaining space will be split equally between the two margins:\par
+\par
+Setting the width of a block-level element will prevent it from stretching out to the edges of its container. Then, you can set the margins to auto, to horizontally center the element within its container. The element will take up the specified width, and the remaining space will be split equally between the two margins:\par
+\par
+\cf3\ul\b\fs32 This <div> element has a width of 500px, and margin set to auto.\cf0\ulnone\b0\fs22\par
+\par
+Note: The problem with the <div> above occurs when the browser window is smaller than the width of the element. The browser then adds a horizontal scrollbar to the page.\par
+\par
+Using max-width instead, in this situation, will improve the browser's handling of small windows. This is important when making a site usable on small devices:\par
+\par
+\cf3\b\fs28 This <div> element has a max-width of 500px, and margin set to auto.\cf0\b0\fs22\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\b\f0\fs28\lang1033 THE \f1\lang9 Basic Dropdown\f0\lang1033   - WITH ONLY  CSS \b0\f1\fs22\lang9\par
+Create a dropdown box that appears when the user moves the mouse over an element.\par
+\f0\lang1033 ILLUSTRATION\par
+Example\par
+<style>\par
+.dropdown \{\par
+  position: relative;\par
+  display: inline-block;\par
+\}\par
+\par
+.dropdown-content \{\par
+  display: none;\par
+  position: absolute;\par
+  background-color: #f9f9f9;\par
+  min-width: 160px;\par
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\par
+  padding: 12px 16px;\par
+  z-index: 1;\par
+\}\par
+\par
+.dropdown:hover .dropdown-content \{\par
+  display: block;\par
+\}\par
+</style>\f1\lang9\par
+\par
+\ul\b\f0\lang1033 ILLUSTRATIONS TWO\ulnone\b0\f1\lang9\par
+\par
+ Example\par
+<style>\par
+/* Style The Dropdown Button */\par
+.dropbtn \{\par
+  background-color: #4CAF50;\par
+  color: white;\par
+  padding: 16px;\par
+  font-size: 16px;\par
+  border: none;\par
+  cursor: pointer;\par
+\}\par
+\par
+/* The container <div> - needed to position the dropdown content */\par
+.dropdown \{\par
+  position: relative;\par
+  display: inline-block;\par
+\}\par
+\par
+/* Dropdown Content (Hidden by Default) */\par
+.dropdown-content \{\par
+  display: none;\par
+  position: absolute;\par
+  background-color: #f9f9f9;\par
+  min-width: 160px;\par
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\par
+  z-index: 1;\par
+\}\par
+\par
+/* Links inside the dropdown */\par
+.dropdown-content a \{\par
+  color: black;\par
+  padding: 12px 16px;\par
+  text-decoration: none;\par
+  display: block;\par
+\}\par
+\par
+/* Change color of dropdown links on hover */\par
+.dropdown-content a:hover \{background-color: #f1f1f1\}\par
+\par
+/* Show the dropdown menu on hover */\par
+.dropdown:hover .dropdown-content \{\par
+  display: block;\par
+\}\par
+\par
+/* Change the background color of the dropdown button when the dropdown content is shown */\par
+.dropdown:hover .dropbtn \{\par
+  background-color: #3e8e41;\par
+\}\par
+</style>\par
+\par
+\fs32 <div class="dropdown">\par
+  <button class="dropbtn">Dropdown</button>\par
+  <div class="dropdown-content">\par
+    <a href="#">Link 1</a>\par
+    <a href="#">Link 2</a>\par
+    <a href="#">Link 3</a>\par
+  </div>\par
+</div>\par
+\fs22\par
+\par
+\par
+\f0\fs40\lang1033 illustrations 3\f1\fs22\lang9\par
+\par
+<!DOCTYPE html>\par
+<html>\par
+<head>\par
+<style>\par
+.dropbtn \{\par
+  background-color: #4CAF50;\par
+  color: white;\par
+  padding: 16px;\par
+  font-size: 16px;\par
+  border: none;\par
+  cursor: pointer;\par
+\}\par
+\par
+.dropdown \{\par
+  position: relative;\par
+  display: inline-block;\par
+\}\par
+\par
+.dropdown-content \{\par
+  display: none;\par
+  position: absolute;\par
+  right: 0;\par
+  background-color: #f9f9f9;\par
+  min-width: 160px;\par
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\par
+  z-index: 1;\par
+\}\par
+\par
+.dropdown-content a \{\par
+  color: black;\par
+  padding: 12px 16px;\par
+  text-decoration: none;\par
+  display: block;\par
+\}\par
+\par
+.dropdown-content a:hover \{background-color: #f1f1f1;\}\par
+\par
+.dropdown:hover .dropdown-content \{\par
+  display: block;\par
+\}\par
+\par
+.dropdown:hover .dropbtn \{\par
+  background-color: #3e8e41;\par
+\}\par
+</style>\par
+</head>\par
+<body>\par
+\par
+<h2>Aligned Dropdown Content</h2>\par
+<p>Determine whether the dropdown content should go from left to right or right to left with the left and right properties.</p>\par
+\par
+<div class="dropdown" style="float:left;">\par
+  <button class="dropbtn">Left</button>\par
+  <div class="dropdown-content" style="left:0;">\par
+  <a href="#">Link 1</a>\par
+  <a href="#">Link 2</a>\par
+  <a href="#">Link 3</a>\par
+  </div>\par
+</div>\par
+\par
+<div class="dropdown" style="float:right;">\par
+  <button class="dropbtn">Right</button>\par
+  <div class="dropdown-content">\par
+  <a href="#">Link 1</a>\par
+  <a href="#">Link 2</a>\par
+  <a href="#">Link 3</a>\par
+  </div>\par
+</div>\par
+\par
+</body>\par
+</html>\par
+\par
+\b\fs28 CSS Vertical Navigation Bar\b0\fs22\par
+\par
+<!DOCTYPE html>\par
+<html>\par
+<head>\par
+<style>\par
+ul \{\par
+  list-style-type: none;\par
+  margin: 0;\par
+  padding: 0;\par
+  width: 200px;\par
+  background-color: #f1f1f1;\par
+\}\par
+\par
+li a \{\par
+  display: block;\par
+  color: #000;\par
+  padding: 8px 16px;\par
+  text-decoration: none;\par
+\}\par
+\par
+li a.active \{\par
+  background-color: #4CAF50;\par
+  color: white;\par
+\}\par
+\par
+li a:hover:not(.active) \{\par
+  background-color: #555;\par
+  color: white;\par
+\}\par
+</style>\par
+</head>\par
+<body>\par
+\par
+<h2>Vertical Navigation Bar</h2>\par
+<p>In this example, we create an "active" class with a green background color and a white text. The class is added to the "Home" link.</p>\par
+\par
+<ul>\par
+  <li><a class="active" href="#home">Home</a></li>\par
+  <li><a href="#news">News</a></li>\par
+  <li><a href="#contact">Contact</a></li>\par
+  <li><a href="#about">About</a></li>\par
+</ul>\par
+\par
+</body>\par
+</html>\par
+\b\fs32 Full-height Fixed Vertical Navbar\b0\fs22\par
+
+\pard\li1440\sa200\sl276\slmult1\cf2\b\i\f0\fs24\lang1033 =USE THE FOLLOWING FOR THE UL TAG\cf0\b0\i0\fs22\par
+
+\pard\li720\sa200\sl276\slmult1 ul \{\par
+  list-style-type: none;\par
+  margin: 0;\par
+  padding: 0;\par
+  width: 25%;\par
+  background-color: #f1f1f1;\par
+  height: 100%; /* Full height */\par
+  position: fixed; /* Make it stick, even on scroll */\par
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */\par
+\}\par
+\par
+\par
+\b\fs36 CSS Horizontal Navigation Bar\b0\fs22\par
+\par
+\cf2\b\fs24 USING THE    display: inline;\par
+ - By default, <li> elements are block elements. Here, we remove the line breaks before and after each list item, to display them on one line\par
+\cf0\b0\fs22\par
+\b\fs24\par
+FULL ILLUSTRATION\par
+\b0\fs22\par
+<!DOCTYPE html>\par
+<html>\par
+<head>\par
+<style>\par
+ul \{\par
+  list-style-type: none;\par
+  margin: 0;\par
+  padding: 0;\par
+  overflow: hidden;\par
+  background-color: #333;\par
+\}\par
+\par
+li \{\par
+  float: left;\par
+\}\par
+\par
+li a \{\par
+  display: block;\par
+  color: white;\par
+  text-align: center;\par
+  padding: 14px 16px;\par
+  text-decoration: none;\par
+\}\par
+\par
+li a:hover:not(.active) \{\par
+  background-color: #111;\par
+\}\par
+\par
+.active \{\par
+  background-color: #4CAF50;\par
+\}\par
+</style>\par
+</head>\par
+<body>\par
+\par
+<ul>\par
+  <li><a class="active" href="#home">Home</a></li>\par
+  <li><a href="#news">News</a></li>\par
+  <li><a href="#contact">Contact</a></li>\par
+  <li><a href="#about">About</a></li>\par
+</ul>\par
+\par
+</body>\par
+</html>\par
+\par
+\b\fs36 Right-Align Links\b0\fs22\par
+Right-align links by floating the list items to the right (float:right;):\par
+\par
+<ul>\par
+  <li><a href="#home">Home</a></li>\par
+  <li><a href="#news">News</a></li>\par
+  <li><a href="#contact">Contact</a></li>\cf2\b\fs28\par
+  <li style="float:right"><a class="active" href="#about">About</a></li>\par
+\cf0\b0\fs22 </ul>\par
+\par
+\b\fs36 Fixed Navigation Bar\b0\fs22\par
+=USE  THE POSITION PROPERTY\par
+
+\pard\li1440\sa200\sl276\slmult1 Fixed Top\par
+ul \{\par
+  position: fixed;\par
+  top: 0;\par
+  width: 100%;\par
+\}\par
+
+\pard\li720\sa200\sl276\slmult1\par
+\b\fs40 Sticky Navbar\b0\fs22\par
+\cf2\fs28 Add position: sticky; to <ul> to create a sticky navbar.\cf0\fs22\par
+\par
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).\par
+\par
+ILLUSTRATION\par
+\par
+<!DOCTYPE html>\par
+<html>\par
+<head>\par
+<style>\par
+body \{\par
+  font-size: 28px;\par
+\}\par
+\par
+ul \{\par
+  list-style-type: none;\par
+  margin: 0;\par
+  padding: 0;\par
+  overflow: hidden;\par
+  background-color: #333;\par
+  position: -webkit-sticky; /* Safari */\par
+  position: sticky;\par
+  top: 0;\par
+\}\par
+\par
+li \{\par
+  float: left;\par
+\}\par
+\par
+li a \{\par
+  display: block;\par
+  color: white;\par
+  text-align: center;\par
+  padding: 14px 16px;\par
+  text-decoration: none;\par
+\}\par
+\par
+li a:hover \{\par
+  background-color: #111;\par
+\}\par
+\par
+.active \{\par
+  background-color: #4CAF50;\par
+\}\par
+</style>\par
+</head>\par
+<body>\par
+\par
+<div class="header">\par
+  <h2>Scroll Down</h2>\par
+  <p>Scroll down to see the sticky effect.</p>\par
+</div>\par
+\par
+<ul>\par
+  <li><a class="active" href="#home">Home</a></li>\par
+  <li><a href="#news">News</a></li>\par
+  <li><a href="#contact">Contact</a></li>\par
+</ul>\par
+\par
+<h3>Sticky Navigation Bar Example</h3>\par
+<p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>\par
+<p><strong>Note:</strong> Internet Explorer do not support sticky positioning and Safari requires a -webkit- prefix.</p>\par
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>\par
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>\par
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>\par
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>\par
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>\par
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>\par
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>\par
+\par
+</body>\par
+</html>\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+===========================================================\par
+\par
+\b\fs36 CSS Font Descriptors\b0\fs22\par
+\par
+\ul\b font-family\ulnone\b0\tab\par
+VALUE : name\par
+\tab Required. Defines a name for the font\par
+\ul\b src\ulnone\b0\tab\par
+VALUE : URL\tab\par
+Required. Defines the URL of the font file\par
+\ul\b font-stretch\ulnone\b0\par
+\i\fs24 Optional. Defines how the font should be stretched. Default is "normal"\i0\fs22\par
+\tab\par
+POSSIBLE  VALUES : \par
+
+\pard\li2160\sa200\sl276\slmult1\cf3\b\i\fs24 normal\par
+condensed\par
+ultra-condensed\par
+extra-condensed\par
+semi-condensed\par
+expanded\par
+semi-expanded\par
+extra-expanded\par
+ultra-expanded\tab       \par
+
+\pard\li720\sa200\sl276\slmult1\cf0\b0\i0\fs22\par
+\par
+ \ul\b font-style\ulnone\b0\tab\par
+Optional. Defines how the font should be styled. Default is "normal"\par
+\par
+POSSIBLE  VALUES : \par
+
+\pard\li2160\sa200\sl276\slmult1\cf3\b\i\fs24 normal\par
+italic\par
+oblique\tab\par
+
+\pard\li720\sa200\sl276\slmult1\cf0\b0\i0\fs22\par
+\ul\b font-weight\ulnone\b0\par
+Optional. Defines the boldness of the font. Default is "normal"\par
+POSSIBLE VALUES :\tab\par
+
+\pard\li2160\sa200\sl276\slmult1\cf3\b\fs24 normal\par
+bold\par
+\i\fs28 100\par
+200\par
+300\par
+400\par
+500\par
+600\par
+700\par
+800\par
+900\cf0\b0\i0\fs22\tab\par
+
+\pard\li720\sa200\sl276\slmult1 unicode-range\tab unicode-range\tab Optional. Defines the range of UNICODE characters the font supports. Default is "U+0-10FFFF"\par
+\par
+\ul\b\fs40 CSS Web Fonts\par
+\ulnone\b0\fs32 Web fonts allow Web designers to use fonts that are not installed on the user's computer.\par
+When you have found/bought the font you wish to use, just include the font file on your web server, and it will be automatically downloaded to the user when needed.\par
+\par
+Your "own" fonts are defined within the \cf3\fs28 CSS @font-face \cf0\fs32 rule.\par
+Example\par
+
+\pard\li2160\sa200\sl276\slmult1\cf3\b @font-face \cf0\b0\{\par
+  font-family: myFirstFont;\par
+  src: url(sansation_light.woff);\par
+\}\par
+\par
+div \{\par
+  font-family: myFirstFont;\par
+\}\par
+
+\pard\li720\sa200\sl276\slmult1\b\i Using Bold Text\b0\i0\par
+
+\pard\li2160\sa200\sl276\slmult1\cf3\fs36 @font-face \cf0\fs32\{\par
+  font-family: myFirstFont;\par
+  src: url(sansation_bold.woff);\par
+  font-weight: bold;\par
+\}\par
+
+\pard\li720\sa200\sl276\slmult1\cf2\b\i\fs36 The file "sansation_bold.woff" is another font file, that contains the bold characters for the Sansation font.\cf0\b0\i0\fs32\par
+\fs22\par
+\par
+\b\fs36 How TO - Google Fonts\b0\fs22\par
+<!DOCTYPE html>\par
+<html>\par
+<head>\par
+<link href='{{\field{\*\fldinst{HYPERLINK https://fonts.googleapis.com/css?family=Sofia }}{\fldrslt{https://fonts.googleapis.com/css?family=Sofia\ul0\cf0}}}}\f0\fs22 ' rel='stylesheet'>\par
+<style>\par
+body \{\par
+    font-family: 'Sofia';font-size: 22px;\par
+\}\par
+</style>\par
+</head>\par
+<body>\par
+\par
+<h1>Sofia</h1>\par
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>\par
+<p>123456790</p>\par
+<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>\par
+<p>abcdefghijklmnopqrstuvwxyz</p>\par
+\par
+</body>\par
+</html>\par
+\par
+{{\field{\*\fldinst{HYPERLINK https://www.w3schools.com/howto/howto_google_fonts.asp }}{\fldrslt{https://www.w3schools.com/howto/howto_google_fonts.asp\ul0\cf0}}}}\f0\fs22\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\ul\b\fs44 CSS XTRA\ulnone\b0\fs22\par
+\par
+\b\i CSS Transitions\b0\i0\par
+To create a transition effect, you must specify two things:\par
+the CSS property you want to add an effect to\par
+the duration of the effect\par
+Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.\par
+The following example shows a 100px * 100px red <div> element. The <div> element has also specified a transition effect for the width property, with a duration of 2 seconds:\par
+\b Example1\cf3\b0\par
+
+\pard\li2160\sa200\sl276\slmult1\b div \{\par
+  width: 100px;\par
+  height: 100px;\par
+  background: red;\par
+  transition: width 2s;\par
+\}\par
+div:hover \{\par
+  width: 300px;\par
+\}\lang9\par
+
+\pard\li720\sa200\sl276\slmult1\cf0 EXAMPLE 2\b0\par
+
+\pard\li2160\sa200\sl276\slmult1\cf3\b .btn \{\par
+  background-color: #ddd;\par
+  border: none;\par
+  color: black;\par
+  padding: 16px 32px;\par
+  text-align: center;\par
+  font-size: 16px;\par
+  margin: 4px 2px;\par
+  transition: 0.3s;\par
+\}\par
+\par
+.btn:hover \{\par
+  background-color: #3e8e41;\par
+  color: white;\par
+\}\par
+
+\pard\li720\sa200\sl276\slmult1\cf0\b0\par
+\par
+\par
+\par
+\b\fs32 Change Several Property Values\b0\fs22\par
+The following example adds a transition effect for both the width and height property, with a duration of 2 seconds for the width and 4 seconds for the height:\par
+\par
+
+\pard\li2160\sa200\sl276\slmult1\cf3\b Example\par
+div \{\par
+  transition: width 2s, height 4s;\par
+\}\par
+div:hover \{\par
+  width: 300px;\par
+  height: 300px;\par
+\}\par
+
+\pard\li720\sa200\sl276\slmult1\cf0\b0\par
+\b\fs28 Specify the Speed Curve of the Transition\b0\fs22\par
+The transition-timing-function property specifies the speed curve of the transition effect.\par
+\par
+The transition-timing-function property can have the following values:\par
+\par
+ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)\par
+linear - specifies a transition effect with the same speed from start to end\par
+ease-in - specifies a transition effect with a slow start\par
+ease-out - specifies a transition effect with a slow end\par
+ease-in-out - specifies a transition effect with a slow start and end\par
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function\par
+The following example shows the some of the different speed curves that can be used:\par
+\par
+Example\par
+
+\pard\li1440\sa200\sl276\slmult1\cf3\b #div1 \{transition-timing-function: linear;\}\par
+#div2 \{transition-timing-function: ease;\}\par
+#div3 \{transition-timing-function: ease-in;\}\par
+#div4 \{transition-timing-function: ease-out;\}\par
+#div5 \{transition-timing-function: ease-in-out;\}\par
+
+\pard\li720\sa200\sl276\slmult1\cf0\b0\par
+\b\fs24 Delay the Transition Effect\b0\fs22\par
+The transition-delay property specifies a delay (in seconds) for the transition effect.\par
+\par
+The following example has a 1 second delay before starting:\par
+\par
+
+\pard\li2160\sa200\sl276\slmult1\cf3\b Example\par
+
+\pard\li2880\sa200\sl276\slmult1 div \{\par
+  width: 100px;\par
+  height: 100px;\par
+  background: red;\par
+  transition: width 3s;\par
+  transition-delay: 1s;\par
+\}\par
+\par
+div:hover \{\par
+  width: 300px;\par
+\}\cf0\b0\par
+
+\pard\li720\sa200\sl276\slmult1\b\par
+Another  Transition Examples\par
+
+\pard\li2160\sa200\sl276\slmult1\cf3\fs24 div \{\par
+  width: 100px;\par
+  height: 100px;\par
+  background: red;\par
+  transition-property: width;\par
+  transition-duration: 2s;\par
+  transition-timing-function: linear;\par
+  transition-delay: 1s;\par
+\}\par
+\par
+div:hover \{\par
+  width: 300px;\par
+\}\par
+
+\pard\li720\sa200\sl276\slmult1\cf0\fs28 Transition + Transform\b0\fs22\par
+\par
+\cf3\b\fs24 <style> \par
+div \{\par
+  width: 100px;\par
+  height: 100px;\par
+  background: red;\par
+  transition: width 2s, height 2s, transform 2s;\par
+\}\par
+\par
+div:hover \{\par
+  width: 300px;\par
+  height: 300px;\par
+  transform: rotate(180deg);\par
+\}\par
+</style>\par
+\cf0\b0\fs22\par
+\par
+\par
+\par
+\par
+\par
+\b\fs32\par
+CSS 2D Transforms Methods\par
+\b0\fs22 With the CSS transform property you can use the following 2D transformation methods:\par
+\par
+translate()\par
+
+\pard\li1440\sa200\sl276\slmult1    moves an element from its current position (according to the parameters given for the X-axis and the Y-axis\par
+div \{\par
+  transform: translate(50px, 100px);\par
+\}\par
+\par
+
+\pard\li720\sa200\sl276\slmult1 rotate()\par
+rotates an element clockwise or counter-clockwise according to a given degree\par
+div \{\par
+  transform: rotate(34deg);\par
+\}\par
+\b\fs24 Using negative values will rotate the element counter-clockwise.\par
+div \{\par
+  transform: rotate(-33deg);\par
+\}\b0\fs22\par
+scale()\par
+
+\pard\li1440\sa200\sl276\slmult1\cf3\b  increases or decreases the size of an element (according to the parameters given for the width and height).\par
+div \{\par
+  transform: scale(2, 3);\par
+\}\par
+
+\pard\li720\sa200\sl276\slmult1\cf0\b0\par
+scaleX()\par
+
+\pard\li1440\sa200\sl276\slmult1 increases or decreases the width of an element.\par
+
+\pard\li2160\sa200\sl276\slmult1 div \{\par
+  transform: scaleX(2);  \cf1\b\i scale to  2ce the original width\par
+\cf0\b0\i0\}\par
+
+\pard\li720\sa200\sl276\slmult1 scaleY()     \par
+
+\pard\li1440\sa200\sl276\slmult1  increases or decreases the height of an element.   \par
+div \{\par
+  transform: scaleY(3);\par
+\}\par
+\par
+The following example \cf2\b\fs40 decreases\cf0\b0\fs36  \fs22 the <div> element to be half of its original height: \par
+\par
+Example\par
+div \{\par
+\cf2\b\fs24   transform: scaleY(0.5);\cf0\b0\fs22\par
+
+\pard\li720\sa200\sl276\slmult1\b\fs32 others \par
+ADVANCED TRANSFORMS\b0\fs22\par
+skewX()\par
+skewY()\par
+skew()\par
+matrix()\par
+The matrix() method combines all the 2D transform methods into one.\par
+The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements.\par
+div \{\par
+  transform: matrix(1, -0.3, 0, 1, 0, 0);\par
+\}\par
+\par
+\par
+\par
+\b\fs48 Media query \b0\fs22 is a concept that acts a major part in responsive web design. Responsive web design refers to creating web pages which can dynamically change its appearance according to the user\rquote s screen, (mobile, tablet, laptop, PC etc.)\par
+\par
+Syntax\par
+@media media-type and (media-feature)\{\par
+\}\par
+\par
+\par
+\ul\b Media types\ulnone\b0\par
+These are the category type of device. Generally used media types are \par
+\fs40\ldblquote screens\rdblquote  , \ldblquote print\rdblquote .\fs22\par
+\par
+\b\fs28 Min-width : \fs40  \cf2\i t  px\cf0\b0\i0\fs22\par
+the specified  attributes   will take effect when the device width is \fs40 greater than or equal \cf2\b\i\fs36 to   t px  \cf3 from its parent element\cf2\par
+\cf0\b0\i0\fs22 illustration:\par
+@media screen and ( min-width : 1000 px)\{\par
+.content\{\par
+padding:50px;\par
+\}\par
+\par
+\}\par
+\cf1\b\i implies that when the width of the parent is GREATER THAN OR EQUAL TO \par
+1000PX , set padding to  50px \par
+\cf0\b0\i0\par
+\par
+\b\fs32\par
+Max-width :\par
+\b0\fs22\par
+the specified  attributes   will take effect when the device width is \fs40 Less than or equal \cf2\b\i\fs36 to   t px  \cf3 from its parent element\cf2\par
+\cf0\b0\i0\fs22 illustration:\par
+@media \b screen\b0  and ( max-width : 1000 px)\{\par
+.content\{\par
+padding:50px;\par
+\}\par
+\par
+\}\par
+\cf1\b\i implies that when the width of the parent is \fs28 LESS  THAN \fs22 OR EQUAL TO \par
+1000PX , set padding to  50px \par
+\cf0\b0\i0\par
+\par
+\par
+USING AND\par
+\par
+@media \b screen\b0  and \cf3\b ( min-width : 600 px)   \cf2\fs32 and \cf0\b0\fs22    \cf3\b ( max-width : 1000 px)     \cf0\b0\{\par
+.content\{\par
+padding:50px;\par
+\}\par
+\par
+\}\par
+\par
+\cf1\b\i implies that when the width of the parent is \par
+is GREATER THAN OR EQUAL TO  600px  \par
+\cf2\fs28 and\cf1\fs22\par
+\fs28 LESS  THAN \fs22 OR EQUAL TO  1000PX , set padding to  50px \par
+\cf0\b0\i0\par
+\par
+\par
+Oftentimes, we want to limit the width of an element relative to its parent, and at the same time, to make it dynamic. So having a base width or height with the ability to make it extend based on the available space. Let\rquote s say, for example, that we have a button that should have a minimum width, where it shouldn\rquote t go below it. This is where the maximum and minimum properties become handy.\par
+\par
+\b Min-Width And Max-Width Properties\b0\par
+The first thing to discuss is width-related properties. We have min-width and max-width, and each one of them is important and has its use cases.\par
+\par
+\b Min Width\b0\par
+When setting the value of min-width, its benefit lies in preventing the used value for width property from becoming less than the specified value for min-width. Note that the default value for min-width is auto, which resolves to 0.\par
+\par
+\par
+We have a button with a varying text within in. The text might range from one word to multiple. To guarantee that it will have a minimum width even if it has one word only, min-width should be used. The minimum width is 100px so that even if the button has a very short content, like \ldblquote Done\rdblquote  word, or an icon only, it will still be big enough to be noticed.\par
+\par
+\par
+\par
+Max Width\par
+When setting the value of max-width, its benefit lies in preventing the used value for width property from becoming more than the specified value for max-width. The default value for max-width is none.\par
+\par
+By using max-width: 100%, the width of the image won\rquote t exceed the width of its parent. In case the image is smaller than its parent, max-width: 100% won\rquote t have an actual effect on the image, because it\rquote s smaller than its parent.\par
+\par
+\par
+when having a list of tags, it\rquote s recommended to constraint a minimum width for a tag so that if its content is short, the look of it won\rquote t be affected.By having that flexibility, the tag will look good no matter how short the content is. But, what will happen in case the content author entered a very long tag name, and the content management system he uses doesn\rquote t have a maximum character\rquote s length for a tag? We can use max-width as well.\par
+.c-tag \{\par
+  display: inline-block;\par
+  min-width: 100px;\par
+  max-width: 250px;\par
+  overflow: hidden;\par
+  white-space: nowrap;\par
+  text-overflow: ellipsis;\par
+  /*Other styles*/\par
+\}\par
+By using max-width, the tag width will be constrained to a specific value. However, that\rquote s not enough. The tag name should be truncated.\par
+\par
+There are different use cases for the minimum and maximum values with buttons since there are multiple variations of a button component\par
+Notice that if the width is too small. Without setting a minimum width, the display can get worse in case there was no text for any reason. Setting a minimum width is important in that case\par
+\par
+Setting Min Width To Zero With Flexbox\par
+The default value for min-width is auto, which is computed to zero. \par
+\cf2\b\i\fs32 When an element is a flex item, the value of min-width doesn\rquote t compute to zero. \cf0\b0\i0\fs22\par
+\par
+The minimum size of a flex item is equal to the size of its contents.\par
+\par
+\fs44 CSS Icons\fs22\par
+\par
+How To Add Icons\par
+The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome.\par
+\par
+Add the name of the specified icon class to any inline HTML element (like <i> or <span>).\par
+\par
+\fs36 Font Awesome Icons\fs22\par
+<!DOCTYPE html>\par
+<html>\par
+<head>\par
+<script src="{{\field{\*\fldinst{HYPERLINK https://kit.fontawesome.com/a076d05399.js }}{\fldrslt{https://kit.fontawesome.com/a076d05399.js\ul0\cf0}}}}\f0\fs22 "></script>\par
+</head>\par
+<body>\par
+\par
+<i class="fas fa-cloud"></i>\par
+<i class="fas fa-heart"></i>\par
+<i class="fas fa-car"></i>\par
+<i class="fas fa-file"></i>\par
+<i class="fas fa-bars"></i>\par
+\par
+</body>\par
+</html>\par
+\par
+\par
+\par
+\par
+\fs36 Bootstrap Icons\fs22\par
+To use the Bootstrap glyphicons, add the following line inside the <head> section of your HTML page:\par
+\par
+<link rel="stylesheet" href="{{\field{\*\fldinst{HYPERLINK https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css }}{\fldrslt{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\ul0\cf0}}}}\f0\fs22 ">\par
+\par
+Note: No downloading or installation is required!\par
+\par
+Example\par
+<!DOCTYPE html>\par
+<html>\par
+<head>\par
+<link rel="stylesheet" href="{{\field{\*\fldinst{HYPERLINK https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css }}{\fldrslt{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\ul0\cf0}}}}\f0\fs22 ">\par
+</head>\par
+<body>\par
+\par
+<i class="glyphicon glyphicon-cloud"></i>\par
+<i class="glyphicon glyphicon-remove"></i>\par
+<i class="glyphicon glyphicon-user"></i>\par
+<i class="glyphicon glyphicon-envelope"></i>\par
+<i class="glyphicon glyphicon-thumbs-up"></i>\par
+\par
+</body>\par
+</html>\par
+Result:\par
+\par
+\par
+\fs40 Google Icons\fs22\par
+To use the Google icons, add the following line inside the <head> section of your HTML page:\par
+\par
+<link rel="stylesheet" href="{{\field{\*\fldinst{HYPERLINK https://fonts.googleapis.com/icon?family=Material+Icons }}{\fldrslt{https://fonts.googleapis.com/icon?family=Material+Icons\ul0\cf0}}}}\f0\fs22 ">\par
+Note: No downloading or installation is required!\par
+\par
+Example\par
+<!DOCTYPE html>\par
+<html>\par
+<head>\par
+<link rel="stylesheet" href="{{\field{\*\fldinst{HYPERLINK https://fonts.googleapis.com/icon?family=Material+Icons }}{\fldrslt{https://fonts.googleapis.com/icon?family=Material+Icons\ul0\cf0}}}}\f0\fs22 ">\par
+</head>\par
+<body>\par
+\par
+<i class="material-icons">cloud</i>\par
+<i class="material-icons">favorite</i>\par
+<i class="material-icons">attachment</i>\par
+<i class="material-icons">computer</i>\par
+<i class="material-icons">traffic</i>\par
+\par
+</body>\par
+</html>\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
